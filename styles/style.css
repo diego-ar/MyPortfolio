@@ -14,7 +14,7 @@
     --bg-color: #1f242d;
     --second-bg-color: #323946;
     --text-color: #fff;
-    --main-color: #efb810;
+    --main-color: #80bce4;
 }
 html{
     font-size: 62.5%;
@@ -22,8 +22,13 @@ html{
 }
 
 body{
-    background: var(--bg-color);
+    background: rgb(2,21,61);
+    background: linear-gradient(130deg, rgba(2,21,61,1) 0%, rgba(75,34,122,1) 76%);
     color: var(--text-color);
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
 
 section{
@@ -37,7 +42,12 @@ section{
     left: 0;
     width: 100%;
     padding: 2rem 9%;
-    background: var(--bg-color);
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 12.5px );
+    -webkit-backdrop-filter: blur( 12.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,6 +56,7 @@ section{
 
 .header .sticky{
     border-bottom: .1rem solid rgba(0, 0, 0, .2);
+    
 }
 
 .logo{
@@ -151,7 +162,8 @@ span{
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: var(--second-bg-color);
+    background: rgb(2,21,61);
+    background: linear-gradient(130deg, rgba(2,21,61,1) 0%, rgba(75,34,122,1) 76%);
 }
 
 .about-img img{
@@ -221,7 +233,8 @@ span{
 }
 
 .projects{
-    background: var(--second-bg-color);
+    background: rgb(2,21,61);
+    background: linear-gradient(130deg, rgba(2,21,61,1) 0%, rgba(75,34,122,1) 76%);
 }
 
 .projects h2{
@@ -494,3 +507,4 @@ span{
         }
     
 }
+
